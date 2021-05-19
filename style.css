@@ -1,0 +1,156 @@
+.bg {
+    width: 500px;
+    height: 1000px;
+    background-image: url(images/pandacute.jpeg);
+    background-color: cadetblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    /* Short Hand */
+    /* background: url(images/pandacute.jpeg) no-repeat; */
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+@font-face {
+    font-family: PromptReg;
+    src: url(fonts/Prompt-Regular.woff);
+}
+
+/* Border */
+/* 
+        dotted - Defines a dotted border
+        dashed - Defines a dashed border
+        solid - Defines a solid border
+        double - Defines a double border
+        groove - Defines a 3D grooved border. The effect depends on the border-color value
+        ridge - Defines a 3D ridged border. The effect depends on the border-color value
+        inset - Defines a 3D inset border. The effect depends on the border-color value
+        outset - Defines a 3D outset border. The effect depends on the border-color value
+        none - Defines no border
+        hidden - Defines a hidden border
+
+        border-width
+        border-style
+        border-color
+*/
+
+.border {
+    width: 300px;
+    height: 300px;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: pink;
+}
+
+/* Box model & margin & padding */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 10px solid green;
+    color: blanchedalmond;
+    margin: 10px;
+    padding: 50px;
+}
+
+/* display */
+
+.dis {
+    background-color: coral;
+    display: inline;
+}
+
+.visibility {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.dis2 {
+    background-color: darkolivegreen;
+    display: block;
+}
+
+/* width and Max width */
+
+.ex1 {
+   width: 1000px;
+   border: 2px solid green; 
+}
+
+.ex2 {
+    max-width: 1000px;
+    border: 2px solid rebeccapurple;
+}
+
+/* Position */
+/* 
+- static	
+- absolute		
+- fixed		
+- relative
+- sticky
+ */
+
+.position {
+    width: 300px;
+    height: 20px;
+    border: 2px solid goldenrod;
+    position: static;
+}
+
+.parent {
+    width: 300px;
+    height: 150px;
+    border: 2px solid blue;
+    position: relative;
+    top: 50;
+    left: 50;
+}
+
+.child {
+    width: 100px;
+    height: 50px;
+    border: 2px solid red;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* z index */
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rosybrown;
+    border: 2px solid black;
+    position: relative;
+    top: 50px;
+    z-index: -1;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    border: 2px solid black;
+    position: relative;
+    top: -40px;
+    z-index: 2;
+}
+
+/* overflow */
+
