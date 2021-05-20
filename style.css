@@ -153,4 +153,108 @@ body {
 }
 
 /* overflow */
+.flow {
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: scroll;
+}
 
+/* CSS -Combinators
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+*/
+
+/* descendant selector (space) */
+/* div p {
+    background-color: burlywood;
+} */
+
+/* child selector (>) */
+/* div > p {
+    background-color: burlywood;
+} */
+
+/* adjacent sibling selector (+) [find only one p after div]*/
+/* div + p {
+    background-color: burlywood;
+} */
+
+/* general sibling selector (~) [find every p after div] */
+/* div ~ p {
+    background-color: burlywood;
+} */
+
+/* 
+
+    : Pseudo class 
+    :: Pseudo elements 
+
+*/
+
+.pseudoclass {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+
+.pseudoclass:hover {
+    background-color: cornflowerblue;
+}
+
+.pseudoelement::first-line {
+    font-size: 36px;
+}
+
+/* combine */
+.a:first-child::first-line {
+    font-size: 40px;
+}
+
+/* before and after */
+
+.b::before {
+    content: "This is inserted from before =>";
+}
+
+.b::after {
+    content: "<= This is inserted from after";
+}
+
+/* box-sizing [if don't use box-sizing the size that you assign will be change] */
+
+.somebox {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* * use for reset size browser */
+/* * {
+    margin: 0;
+} */
+
+/* 
+    CSS Specificity [Define Level in  CSS]
+
+    - Inline styles <header style="color: #000;"></header>
+    - IDs - #content.
+    - Classes, attributes and pseudo-classes - such as :hover, :focus etc.
+    - Elements and pseudo-elements - such as h1, div, ::before and ::after.
+
+*/
+
+#heading {
+    color: red;
+}
+
+.heading {
+    color: green;
+}
+h2 {
+    color: purple;
+}
